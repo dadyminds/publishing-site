@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Growth | Author & Business Branding</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .form-input:focus {
+            border-color: #3b82f6;
+            ring-color: #3b82f6;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-nav border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
+                        <i data-lucide="sparkles" class="text-white w-5 h-5"></i>
+                    </div>
+                    <span class="text-xl font-bold tracking-tight">DADYMINDS</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#services" class="text-sm font-medium hover:text-blue-600 transition">Services</a>
+                    <a href="#process" class="text-sm font-medium hover:text-blue-600 transition">Our Process</a>
+                    <a href="#testimonials" class="text-sm font-medium hover:text-blue-600 transition">Success Stories</a>
+                    <a href="#contact" class="bg-blue-600 text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-blue-700 transition shadow-lg shadow-blue-500/20">
+                        Get Started
+                    </a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden p-2" id="mobile-menu-btn">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="pt-32 pb-20 px-4">
+        <div class="max-w-7xl mx-auto text-center">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-600 text-sm font-medium mb-6 border border-blue-100">
+                <span class="relative flex h-2 w-2">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+                </span>
+                Now accepting new authors for Q3 2024
+            </div>
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 leading-[1.1]">
+                Turn Your Expertise Into <br>
+                <span class="gradient-text uppercase">Global Influence</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed">
+                We help authors, researchers, and entrepreneurs publish world-class books and build authoritative personal brands that command attention.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#contact" class="w-full sm:w-auto px-8 py-4 bg-blue-600 text-white rounded-xl font-bold text-lg hover:bg-blue-700 transition-all transform hover:-translate-y-1 shadow-xl shadow-blue-500/25">
+                    Start Your Publishing Journey
+                </a>
+                <a href="#services" class="w-full sm:w-auto px-8 py-4 bg-white text-slate-900 border border-slate-200 rounded-xl font-bold text-lg hover:bg-slate-50 transition-all">
+                    Explore Services
+                </a>
+            </div>
+            
+            <!-- Trust Indicators -->
+            <div class="mt-16 pt-10 border-t border-slate-200">
+                <p class="text-sm font-semibold text-slate-400 uppercase tracking-widest mb-8">Trusted by innovators globally</p>
+                <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-50 grayscale">
+                    <span class="text-2xl font-bold italic">FORBES</span>
+                    <span class="text-2xl font-bold tracking-tighter">WIRED</span>
+                    <span class="text-2xl font-bold">Medium</span>
+                    <span class="text-2xl font-bold tracking-tight">VOGUE</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Grid -->
+    <section id="services" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">A Holistic Approach to Success</h2>
+                <p class="text-slate-600">Beyond just printing books—we build careers.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:shadow-xl transition-all group">
+                    <div class="w-12 h-12 bg-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="book-open" class="text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Hybrid Publishing</h3>
+                    <p class="text-slate-600 mb-6">End-to-end editorial, professional design, and global distribution. Retain your rights while getting big-publisher quality.</p>
+                    <ul class="space-y-2 text-sm text-slate-500">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> Manuscript Evaluation</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> Interior Formatting</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:shadow-xl transition-all group">
+                    <div class="w-12 h-12 bg-purple-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="award" class="text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Author Branding</h3>
+                    <p class="text-slate-600 mb-6">Build a "vibrational" personal brand. We manage your digital presence, PR, and positioning as a thought leader.</p>
+                    <ul class="space-y-2 text-sm text-slate-500">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> Media Relations</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> Social Media Strategy</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:shadow-xl transition-all group">
+                    <div class="w-12 h-12 bg-emerald-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="trending-up" class="text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Academic Growth</h3>
+                    <p class="text-slate-600 mb-6">Specialized support for researchers. From research structure to navigating APC and global journal submissions.</p>
+                    <ul class="space-y-2 text-sm text-slate-500">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> Research Consulting</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> Journal Positioning</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="process" class="py-24 bg-slate-900 text-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center gap-16">
+                <div class="md:w-1/2">
+                    <h2 class="text-4xl font-bold mb-6">Your Path to <span class="text-blue-400">Global Launch</span></h2>
+                    <p class="text-slate-400 text-lg mb-10 leading-relaxed">
+                        We've distilled the complex world of publishing and branding into a seamless 3-step engine that works while you focus on creating.
+                    </p>
+                    
+                    <div class="space-y-8">
+                        <div class="flex gap-6">
+                            <div class="flex-shrink-0 w-12 h-12 rounded-full border border-blue-400 flex items-center justify-center text-xl font-bold text-blue-400">1</div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-1">Strategy Blueprint</h4>
+                                <p class="text-slate-400">A deep-dive session to align your manuscript or brand with global market trends.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6">
+                            <div class="flex-shrink-0 w-12 h-12 rounded-full border border-blue-400 flex items-center justify-center text-xl font-bold text-blue-400">2</div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-1">Execution & Polishing</h4>
+                                <p class="text-slate-400">Our team handles editing, formatting, and high-impact design to ensure elite quality.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6">
+                            <div class="flex-shrink-0 w-12 h-12 rounded-full border border-blue-400 flex items-center justify-center text-xl font-bold text-blue-400">3</div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-1">Global Scale</h4>
+                                <p class="text-slate-400">Launch across 40,000+ retailers worldwide with a custom marketing push.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 relative">
+                    <div class="w-full aspect-square bg-gradient-to-tr from-blue-600/20 to-purple-600/20 rounded-full blur-3xl absolute -top-10 -left-10 animate-pulse"></div>
+                    <div class="bg-slate-800 p-8 rounded-3xl border border-slate-700 shadow-2xl relative z-10">
+                        <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&q=80&w=800" alt="Book Mockup" class="rounded-xl shadow-2xl mb-6">
+                        <div class="flex items-center justify-between p-4 bg-slate-900 rounded-xl border border-slate-700">
+                            <div>
+                                <p class="text-sm text-slate-400">Project Status</p>
+                                <p class="font-bold">Finalizing Design</p>
+                            </div>
+                            <div class="text-blue-400">85% Complete</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-16">What Our Authors Say</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="p-8 rounded-3xl border border-slate-100 bg-slate-50 italic">
+                    <p class="text-slate-600 mb-6">"DADYMINDS didn't just publish my book; they transformed my entire professional identity. I'm now getting speaking invites I never thought possible."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 bg-slate-300 rounded-full"></div>
+                        <div>
+                            <p class="font-bold text-sm">Dr. Sarah Johnson</p>
+                            <p class="text-xs text-slate-400">Academic Researcher & Author</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-8 rounded-3xl border border-slate-100 bg-slate-50 italic">
+                    <p class="text-slate-600 mb-6">"The hybrid model gave me the creative control I wanted with the professional polish of a traditional house. Highly recommended for first-timers."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 bg-slate-300 rounded-full"></div>
+                        <div>
+                            <p class="font-bold text-sm">Marcus Chen</p>
+                            <p class="text-xs text-slate-400">SaaS Entrepreneur</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-8 rounded-3xl border border-slate-100 bg-slate-50 italic">
+                    <p class="text-slate-600 mb-6">"Their attention to branding is what sets them apart. They think about the book as a business tool, not just a collection of pages."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 bg-slate-300 rounded-full"></div>
+                        <div>
+                            <p class="font-bold text-sm">Elena Rodriguez</p>
+                            <p class="text-xs text-slate-400">Lifestyle Coach</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-24 bg-slate-50">
+        <div class="max-w-3xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+            <div class="space-y-4">
+                <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden">
+                    <button class="w-full p-6 text-left font-bold flex justify-between items-center" onclick="this.nextElementSibling.classList.toggle('hidden')">
+                        Do I keep my royalties?
+                        <i data-lucide="chevron-down" class="w-5 h-5"></i>
+                    </button>
+                    <div class="px-6 pb-6 text-slate-600 hidden">
+                        Yes, in our hybrid model, you typically retain 100% of your net royalties. We charge for professional services, not a permanent slice of your future earnings.
+                    </div>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden">
+                    <button class="w-full p-6 text-left font-bold flex justify-between items-center" onclick="this.nextElementSibling.classList.toggle('hidden')">
+                        How long does the process take?
+                        <i data-lucide="chevron-down" class="w-5 h-5"></i>
+                    </button>
+                    <div class="px-6 pb-6 text-slate-600 hidden">
+                        A typical high-quality publishing project takes between 4 to 6 months from manuscript completion to global distribution.
+                    </div>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden">
+                    <button class="w-full p-6 text-left font-bold flex justify-between items-center" onclick="this.nextElementSibling.classList.toggle('hidden')">
+                        Do you help with Amazon ads?
+                        <i data-lucide="chevron-down" class="w-5 h-5"></i>
+                    </button>
+                    <div class="px-6 pb-6 text-slate-600 hidden">
+                        Yes, our 'Global Launch' tier includes setup and optimization of Amazon Advertising and other digital marketing platforms.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Lead Gen Form -->
+    <section id="contact" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-blue-600 rounded-[3rem] p-8 md:p-16 text-white relative overflow-hidden shadow-2xl shadow-blue-500/40">
+                <div class="relative z-10 grid lg:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <h2 class="text-4xl md:text-5xl font-bold mb-6">Ready to become a <br>Global Author?</h2>
+                        <p class="text-blue-100 text-lg mb-8">
+                            Fill out the form to book a free 15-minute "Global Influence Audit." We'll look at your current project and suggest a roadmap for success.
+                        </p>
+                        <div class="flex flex-col gap-4">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center">
+                                    <i data-lucide="mail" class="w-5 h-5"></i>
+                                </div>
+                                <span>hello@dadyminds.com</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center">
+                                    <i data-lucide="globe" class="w-5 h-5"></i>
+                                </div>
+                                <span>Global HQ: Delaware, USA</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-3xl p-8 text-slate-900 shadow-xl">
+                        <form id="lead-form" class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-bold mb-2">Full Name</label>
+                                <input type="text" required placeholder="John Doe" class="w-full p-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold mb-2">Email Address</label>
+                                <input type="email" required placeholder="john@company.com" class="w-full p-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold mb-2">What are you working on?</label>
+                                <select class="w-full p-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
+                                    <option>Non-Fiction Book</option>
+                                    <option>Academic Research</option>
+                                    <option>Personal Branding</option>
+                                    <option>Other / Not Sure</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="w-full py-4 bg-blue-600 text-white rounded-xl font-bold hover:bg-blue-700 transition shadow-lg shadow-blue-500/30">
+                                Book My Free Audit
+                            </button>
+                            <p class="text-[10px] text-center text-slate-400 mt-4 uppercase tracking-widest font-semibold">
+                                <i data-lucide="shield" class="w-3 h-3 inline mr-1"></i> No spam. Cancel anytime.
+                            </p>
+                        </form>
+                        
+                        <!-- Success Message (Hidden by default) -->
+                        <div id="success-msg" class="hidden text-center py-8">
+                            <div class="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i data-lucide="check-circle" class="w-10 h-10"></i>
+                            </div>
+                            <h4 class="text-xl font-bold mb-2">Application Received!</h4>
+                            <p class="text-slate-600">Our team will reach out within 24 hours to schedule your audit.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Background decor -->
+                <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-blue-500/30 rounded-full blur-3xl"></div>
+                <div class="absolute -top-24 -left-24 w-64 h-64 bg-purple-500/20 rounded-full blur-3xl"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-white border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                <div class="flex items-center gap-2">
+                    <div class="w-6 h-6 bg-slate-900 rounded flex items-center justify-center">
+                        <i data-lucide="sparkles" class="text-white w-4 h-4"></i>
+                    </div>
+                    <span class="font-bold">DADYMINDS</span>
+                </div>
+                <div class="flex gap-8 text-sm text-slate-500">
+                    <a href="#" class="hover:text-blue-600">Privacy Policy</a>
+                    <a href="#" class="hover:text-blue-600">Terms of Service</a>
+                    <a href="#" class="hover:text-blue-600">Author Portal</a>
+                </div>
+                <p class="text-xs text-slate-400">&copy; 2024 DADYMINDS Holdings LLC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Lead Form Handling
+        const leadForm = document.getElementById('lead-form');
+        const successMsg = document.getElementById('success-msg');
+
+        leadForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Visual Feedback
+            const btn = leadForm.querySelector('button');
+            btn.innerHTML = '<span class="flex items-center justify-center gap-2">Processing... <i data-lucide="loader" class="w-4 h-4 animate-spin"></i></span>';
+            lucide.createIcons();
+            
+            setTimeout(() => {
+                leadForm.classList.add('hidden');
+                successMsg.classList.remove('hidden');
+            }, 1500);
+        });
+
+        // Mobile Menu Toggle
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        mobileBtn.addEventListener('click', () => {
+            // Simplified for this demo
+            const target = document.querySelector('.hidden.md\\:flex');
+            target.classList.toggle('hidden');
+            target.classList.toggle('absolute');
+            target.classList.toggle('top-16');
+            target.classList.toggle('left-0');
+            target.classList.toggle('w-full');
+            target.classList.toggle('bg-white');
+            target.classList.toggle('flex-col');
+            target.classList.toggle('p-8');
+            target.classList.toggle('shadow-xl');
+        });
+    </script>
+</body>
+</html>
